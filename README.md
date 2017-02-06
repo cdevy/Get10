@@ -4,6 +4,10 @@ Création d'une application dérivée du jeu 2048
 Auteur
 
     Charlotte DEVY
+    
+## Objectifs  
+
+Ce projet m'a permis d'apprendre à créer une interface graphique avec Swing et de mettre en place le patron de conception Modèle-Vue-Controlleur. 
 
 ## Versions
 
