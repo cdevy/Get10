@@ -1,12 +1,16 @@
 package game.view;
 
 import java.awt.GridLayout;
-import java.util.Observable;
-import java.util.Observer;
 
 import game.model.Board;
 
 import javax.swing.JPanel;
+
+/**
+ * This class represents the board user interface.
+ * 
+ * @author Charlotte DEVY
+ */
 
 @SuppressWarnings("serial")
 public class BoardView extends JPanel implements Observer {
@@ -18,11 +22,15 @@ public class BoardView extends JPanel implements Observer {
 		super(new GridLayout(5, 5));
 		this.board = board;
 		for (int i=0; i<25; i++) {
-			grid[i] = new SquareView(board.getSquare(i));;
+			grid[i] = new SquareView(board.getSquare(i));
 			add(grid[i]);
 		}
 		(this.board).addObserver(this);
 	}
-
-	public void update(Observable obs, Object arg) {}
+	
+	public SquareView[] getGrid() {
+		return grid;
+	}
+	
+	public void update() { /* Do nothing */	}
 }

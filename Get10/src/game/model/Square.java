@@ -1,7 +1,12 @@
 package game.model;
 
-import java.util.Observable;
 import java.util.Random;
+
+/**
+ * This class represents a square of the game board.
+ * 
+ * @author Charlotte DEVY
+ */
 
 public class Square extends Observable {
 	

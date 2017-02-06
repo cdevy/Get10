@@ -1,6 +1,10 @@
 package game.model;
 
-import java.util.Observable;
+/**
+ * This class represents the game board.
+ * 
+ * @author Charlotte DEVY
+ */
 
 public class Board extends Observable {
 	
@@ -14,5 +18,5 @@ public class Board extends Observable {
 	
 	public Square getSquare(int i) {
 		return grid[i];
-	}
+	}	
 }
